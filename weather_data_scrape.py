@@ -38,7 +38,9 @@ for row in item_list:
 print(results)
 
 # Create dataframe
-df = pd.DataFrame(results)
-print(df)
-df.to_csv('weather_data_raw.csv', index=False)
+df_raw = pd.DataFrame(results)
+#print(df_raw)
+df_raw.to_csv('weather_data_raw.csv', index=False)
 driver.quit()
+
+
