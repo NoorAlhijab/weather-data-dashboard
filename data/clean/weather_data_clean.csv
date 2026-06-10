@@ -1,0 +1,48 @@
+city_id,weather_condition,temperature
+1,Passing clouds. Warm.,84
+2,Scattered clouds. Pleasantly warm.,79
+3,Quite cool.,52
+4,Overcast. Mild.,75
+5,Scattered clouds. Pleasantly warm.,88
+6,Clear. Pleasantly warm.,84
+7,Passing clouds. Mild.,63
+8,Fog. Chilly.,35
+9,Passing clouds. Cool.,54
+10,Broken clouds. Mild.,68
+11,Passing clouds. Pleasantly warm.,77
+12,Rain. Low clouds. Mild.,63
+13,Sunny. Pleasantly warm.,83
+14,Fog. Mild.,70
+15,Clear. Cool.,46
+16,Sunny. Extremely hot.,111
+17,Light rain. Scattered clouds. Warm.,82
+18,Broken clouds. Mild.,70
+19,Warm.,77
+20,Sunny. Warm.,82
+21,Scattered clouds. Warm.,84
+22,Rain showers. Broken clouds. Cool.,57
+23,Fog. Cool.,50
+24,Partly sunny. Mild.,63
+25,Sunny. Mild.,63
+26,Cool.,62
+27,Passing clouds. Refreshingly cool.,61
+28,Partly sunny. Warm.,82
+29,Passing clouds. Warm.,79
+30,Partly cloudy. Cool.,55
+31,Clear. Hot.,91
+32,Light rain. Mostly cloudy. Cool.,50
+33,Partly cloudy. Cool.,55
+34,Scattered clouds. Cool.,57
+35,Passing clouds. Mild.,75
+36,Scattered clouds. Mild.,72
+37,Passing clouds. Mild.,74
+38,Passing clouds. Mild.,63
+39,Passing clouds. Warm.,79
+40,Light rain. Partly sunny. Warm.,81
+41,Clear. Warm.,81
+42,Clear. Refreshingly cool.,57
+43,Low clouds. Mild.,73
+44,Low clouds. Warm.,80
+45,Passing clouds. Extremely hot.,115
+46,Passing clouds. Extremely hot.,104
+47,Sprinkles. Partly sunny. Cool.,55
