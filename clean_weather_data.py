@@ -1,6 +1,6 @@
 import pandas as pd
 # Load raw weather data 
-df = pd.read_csv('data/raw/city_data_raw.csv')
+df = pd.read_csv('data/raw/weather_data_raw.csv')
 print('Raw data shape: ')
 print(df.shape)
 #print(df.head())
@@ -16,8 +16,10 @@ print(df.isna().sum())
 
 # Data cleaning and transformation
 
-# Split 'City_time' into 'day_of_week' and 'local_time' columns
-df[['day_of_week', 'local_time']] = df['city_time'].str.split(' ', n=1, expand=True)
+# Clean 'temperature' column and convert to integer
+df['temperature'] =df['temperature'].str.replace(r'[°F\s]', '', regex=True)
+df['temperature'] = pd.to_numeric(df['temperature'], errors="coerce")
+#print(df['temperature'])
 
 # Preview cleaned data
 print(df.head())
@@ -26,4 +28,4 @@ print('Cleaned data shape: ')
 print(df.shape)
 
 # Save cleaned data
-df.to_csv('data/clean/city_data_clean.csv', index=False)
+df.to_csv('data/clean/clean_weather_data.csv', index=False)
