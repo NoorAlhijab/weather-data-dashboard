@@ -18,6 +18,10 @@ Streamlit and Plotly were used to build interactive charts including:
 - Bar chart for temperature comparison across cities
 - Scatter plot with hover details (city, temperature, weather condition)
 - Highlighted view of hottest cities
+
+## Dashboard Screenshot
+![Weather Dashboard](img/weather_chart.png)
+![Weather Dashboard](img/weather_chart2.png)
  
 ## Setup Instructions
 To run this project locally:
