@@ -25,7 +25,7 @@ for row in item_list:
         temperature = row.find_element(By.CSS_SELECTOR,'td.rbi')
         #print(temperature)
         items_dict = {
-            'city': city.text,
+            'city_name': city.text,
             'city_time': city_time.text,
             'weather_condition': alt_text,
             'temperature': temperature.text
@@ -38,7 +38,15 @@ for row in item_list:
 print(results)
 
 # Create dataframe
-df = pd.DataFrame(results)
-print(df)
-df.to_csv('weather_data_raw.csv', index=False)
+df_raw = pd.DataFrame(results)
+#print(df_raw)
+df_raw.to_csv('data/raw/all_data_raw.csv', index=False)
+df_raw['city_id'] = range(1, len(df_raw) + 1)
+# Split data to two csv files
+city_data = df_raw[["city_id", "city_name", "city_time"]]
+city_data.to_csv('data/raw/city_data_raw.csv', index=False)
+
+weather_data = df_raw[["city_id", "weather_condition", "temperature"]]
+weather_data.to_csv('data/raw/weather_data_raw.csv', index=False)
+
 driver.quit()
